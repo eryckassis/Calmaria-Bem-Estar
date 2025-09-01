@@ -210,7 +210,7 @@
             alt="Profissional do spa realizando atendimento personalizado."
           />
         </div>
-        <section action="." class="container__contato--form">
+        <form action="." class="container__contato--form">
           <div class="container__contato--form-conteudo">
             <h3 class="container__contato--form-conteudo-titulo">
               Entre em contato
@@ -227,6 +227,7 @@
               placeholder="Digite seu nome completo aqui."
               id="nome"
               name="nome"
+              required
             />
             <label for="email">Email</label>
             <input
@@ -234,6 +235,7 @@
               placeholder="Digite seu endereço de e-mail."
               id="email"
               name="email"
+              required
             />
             <label for="telefone">Telefone</label>
             <input
@@ -241,11 +243,12 @@
               placeholder="Coloque seu número de telefone completo aqui."
               id="telefone"
               name="telefone"
+              required
             />
-            <div>
-              <p class="container__contato--inputs--titulo">
+            <fieldset>
+              <legend class="container__contato--inputs--titulo">
                 Prefere contato por:
-              </p>
+              </legend>
               <div class="container__contato--inputs--div">
                 <div>
                   <input type="radio" id="ligacao" name="ligacao" />
@@ -260,15 +263,16 @@
                   <label for="email-contato">Email</label>
                 </div>
               </div>
-            </div>
+            </fieldset>
             <label>Mensagem</label>
             <textarea
               type="text"
               placeholder="Escreva sua mensagem neste espaço."
+              maxlength="500"
             ></textarea>
           </section>
           <button>Enviar</button>
-        </section>
+        </form>
       </section>
     </main>
 
