@@ -1,0 +1,13 @@
+.rodape {
+    background: #E8F5C8;
+    padding: 32px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rodape .rodape__nav--lista {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+}
