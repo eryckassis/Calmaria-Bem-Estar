@@ -1,39 +1,69 @@
 ![Calmaria Spa](./assets/thumbnail.png)
 
-# Calmaria Spa
+# Calmaria Spa – Projeto Prático de Acessibilidade Web
 
-A Calmaria Spa é um empresa de bem estar e saúde. Nesse momento, temos o código inicial da sua landing page, onde vamos encontrar pontos de melhoria para tornar o projeto acessível a todas as pessoas usuárias.
+Este projeto foi desenvolvido com o objetivo de aplicar e consolidar práticas de acessibilidade digital, seguindo as diretrizes técnicas do WCAG (Web Content Accessibility Guidelines). O foco é garantir que pessoas com deficiência física ou cognitiva possam navegar, compreender e interagir com a página de forma eficiente e segura.
 
-<img src="./assets/screenshot.png" alt="Calmaria Spa" width="50%">
+## Características Principais
 
+- Estrutura HTML semântica para melhor interpretação por tecnologias assistivas.
+- CSS modular, com automatização da conversão de px para rem utilizando a biblioteca postcss-pxtorem, facilitando ajustes de escala e responsividade.
+- Refatoração contínua do código para atender aos quatro princípios de acessibilidade: perceptível, operável, compreensível e robusto.
+- Imagens com textos alternativos e contraste adequado para usuários com baixa visão.
+- Navegação por teclado e foco visível para pessoas com limitações motoras.
+- Linguagem clara e instruções objetivas para facilitar o uso por pessoas com deficiência cognitiva.
 
-## 🔨 Funcionalidades do projeto
+## Refatoração e Diretrizes Técnicas de Acessibilidade
 
-Nesse primeiro momento, nós temos a página que foi idealizada como a primeira entrega do time de desenvolvimento.
+O projeto foi revisado e ajustado para atender aos quatro princípios fundamentais do WCAG:
 
-Durante o curso, nós vamos analisar e refatorar o código do projeto. 
-O desafio é encontrar pontos de melhoria para tornar o projeto Calmaria Spa acessível para todas as pessoas usuárias. 
+**Perceptível:**  
+Conteúdo apresentado de forma clara, com contraste suficiente, textos alternativos em imagens e estrutura visual acessível.
 
-O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/1pDTUXo7ovT6zlE64Zw509/Calmaria-Spa--%7C-Forma%C3%A7%C3%A3o-Acessibilidade?type=design&node-id=98-1263&mode=design&t=iIe3hZrzPEvVEi0o-0).
+**Operável:**  
+Todos os elementos interativos podem ser acessados por teclado, com foco visível e navegação intuitiva.
 
-## ✔️ Técnicas e tecnologias utilizadas
+**Compreensível:**  
+Informações e instruções são apresentadas de forma simples e direta, evitando ambiguidades e facilitando o entendimento.
 
-Se liga nessa lista de tudo que usaremos nesse curso:
+**Robusto:**  
+Compatibilidade garantida com diferentes navegadores e tecnologias assistivas, como leitores de tela.
 
-- `HTML`
-- `CSS`
-- `Acessibilidade Web`
-- `Figma`
+## Automatização da Conversão px para rem
 
-E muito mais!
+Para agilizar o processo de refatoração e garantir conformidade com as recomendações do WCAG, foi utilizada a biblioteca postcss-pxtorem. Essa ferramenta converte automaticamente valores em px para rem, tornando o layout flexível e adaptável às configurações de acessibilidade dos usuários.
 
-## 🛠️ Abrir e rodar o projeto
+**Benefícios da automatização:**
 
-Para abrir e rodar o projeto, utilize um editor de código de sua escolha.
+- Facilita ajustes de tamanho para diferentes necessidades visuais.
+- Garante responsividade e escalabilidade do design.
+- Reduz o tempo de refatoração e minimiza erros manuais.
 
-Depois, abra o projeto no seu navegador.
+## Tecnologias Utilizadas
 
-## 📚 Mais informações do curso
+- HTML semântico
+- CSS modular
+- PostCSS com postcss-pxtorem
+- Figma para prototipação
+- Práticas de acessibilidade web
 
-O Calmaria Spa é uma empresa fictícia utilizada nesse curso da Alura.
-A ideia principal desse curso é evoluir ainda mais os conhecimentos em Acessibilidade Web com foco em CSS. 
+## Como Executar o Projeto
+
+1. Instale as dependências do projeto:
+   ```
+   npm install
+   ```
+2. Escreva o CSS normalmente em px na pasta `styles/`.
+3. Execute o comando para converter px para rem e gerar os arquivos finais:
+   ```
+   npm run build:css
+   ```
+4. Referencie os arquivos CSS da pasta `dist/` no HTML:
+   ```html
+   <link rel="stylesheet" href="dist/style.css" />
+   ```
+5. Abra o projeto em seu navegador e utilize ferramentas de acessibilidade para validação.
+
+## Finalidade
+
+Este projeto foi desenvolvido para prática e aprimoramento de técnicas de acessibilidade web, visando a inclusão digital de pessoas com diferentes tipos de deficiência. O objetivo é consolidar conhecimentos técnicos e promover a construção de interfaces
