@@ -1,4 +1,5 @@
-![Calmaria Spa](./assets/thumbnail.png)
+<div><img center width="685" height="994" alt="Screenshot 2025-09-01 185717" src="https://github.com/user-attachments/assets/d3206300-dbc9-4fc7-a8bc-54ba847f643d" /></div>
+
 
 # Calmaria Spa – Projeto Prático de Acessibilidade Web
 
