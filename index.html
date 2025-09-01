@@ -221,33 +221,51 @@
             </p>
           </div>
           <section class="container__contato--inputs">
-            <label>Nome</label>
-            <input type="text" />
-            <label>Email</label>
-            <input type="email" />
-            <label>Telefone</label>
-            <input type="text" />
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              placeholder="Digite seu nome completo aqui."
+              id="nome"
+              name="nome"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Digite seu endereço de e-mail."
+              id="email"
+              name="email"
+            />
+            <label for="telefone">Telefone</label>
+            <input
+              type="text"
+              placeholder="Coloque seu número de telefone completo aqui."
+              id="telefone"
+              name="telefone"
+            />
             <div>
               <p class="container__contato--inputs--titulo">
                 Prefere contato por:
               </p>
               <div class="container__contato--inputs--div">
                 <div>
-                  <input type="radio" />
-                  <label>Ligação</label>
+                  <input type="radio" id="ligacao" name="ligacao" />
+                  <label for="ligacao">Ligação</label>
                 </div>
                 <div>
-                  <input type="radio" />
-                  <label>WhatsApp</label>
+                  <input type="radio" id="whatsapp" name="whatsapp" />
+                  <label for="whatsapp">WhatsApp</label>
                 </div>
                 <div>
-                  <input type="radio" />
-                  <label>Email</label>
+                  <input type="radio" id="email-contato" name="email-contato" />
+                  <label for="email-contato">Email</label>
                 </div>
               </div>
             </div>
             <label>Mensagem</label>
-            <textarea type="text"></textarea>
+            <textarea
+              type="text"
+              placeholder="Escreva sua mensagem neste espaço."
+            ></textarea>
           </section>
           <button>Enviar</button>
         </section>
