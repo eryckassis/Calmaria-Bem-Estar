@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,19 +22,23 @@
   </head>
 
   <body>
-    <div class="cabecalho">
-      <div class="cabecalho__nav">
-        <a>
-          <img class="cabecalho__nav--logo" src="./assets/logo.png" />
+    <header class="cabecalho">
+      <nav class="cabecalho__nav">
+        <a href="#">
+          <img
+            class="cabecalho__nav--logo"
+            src="./assets/logo.png"
+            alt="Logo da Calmaria"
+          />
         </a>
         <span class="cabecalho__nav--line"></span>
-        <div class="cabecalho__nav--lista">
-          <div class="cabecalho__lista-item"><a href="#">Espaço</a></div>
-          <div class="cabecalho__lista-item"><a href="#">Serviços</a></div>
-          <div class="cabecalho__lista-item"><a href="#">Contato</a></div>
-        </div>
-      </div>
-    </div>
+        <ul class="cabecalho__nav--lista">
+          <li class="cabecalho__lista-item"><a href="#">Espaço</a></li>
+          <li class="cabecalho__lista-item"><a href="#">Serviços</a></li>
+          <li class="cabecalho__lista-item"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="container__primeiro">
@@ -47,6 +51,7 @@
         <img
           class="container__primeiro--imagem"
           src="./assets/home-image.png"
+          alt="Mulher recebendo massagem deitada em uma cama de massagem."
         />
       </div>
 
@@ -55,17 +60,19 @@
           <img
             class="container__secao--conteudo--img1"
             src="./assets/espaco-1.png"
+            alt="Piscinas e claraboias grandes ao redor da piscina coberta, e há plantas ao redor da piscina."
           />
           <div class="container__secao--conteudo--textos">
-            <h1 class="container__secao--conteudo--textos-titulo">
+            <h2 class="container__secao--conteudo--textos-titulo">
               Tecnologia e natureza no seu relaxamento
-            </h1>
+            </h2>
             <p class="container__secao--conteudo--textos-infos">
               Equipamentos de ponta, produtos certificados e uma equipe
               qualificada te ajudam a se livrar do stress com equilíbrio e
               tranquilidade.
             </p>
             <object
+              tabindex="-1"
               data="./assets/separador-direita.svg"
               type="image/svg+xml"
             ></object>
@@ -73,14 +80,15 @@
         </div>
         <div class="container__secao--conteudo">
           <div class="container__secao--conteudo--textos">
-            <h1 class="container__secao--conteudo--textos-titulo">
+            <h3 class="container__secao--conteudo--textos-titulo">
               Elevando o seu bem-estar
-            </h1>
+            </h3>
             <p class="container__secao--conteudo--textos-infos">
               Cada visita é uma jornada. Não importa a sua rotina, aqui você
               encontra seu paraíso particular.
             </p>
             <object
+              tabindex="-1"
               data="./assets/separador-esquerda.svg"
               type="image/svg+xml"
             ></object>
@@ -93,6 +101,7 @@
             <img
               class="container__secao--conteudo--img2"
               src="./assets/espaco-3.png"
+              alt="Ambiente de relaxamento com poltronas confortaveis e plantas ao redor"
             />
           </div>
         </div>
@@ -100,9 +109,16 @@
 
       <div class="container container__cards">
         <div class="container__cards--card">
-          <img src="./assets/icon-massagem.png" />
-          <h1 class="container__cards--card-title">Massagens</h1>
-          <img src="./assets/soft-star.png" />
+          <img
+            src="./assets/icon-massagem.png"
+            alt="Ícone representando massagem, mãos aplicando técnica de relaxamento"
+          />
+
+          <h3 class="container__cards--card-title">Massagens</h3>
+          <img
+            src="./assets/soft-star.png"
+            alt="Estrela decorativa, elemento visual de destaque."
+          />
           <p class="container__cards--card-texto">
             Relaxantes, terapêuticas e drenagens. Nossa equipe está pronta para
             aliviar suas tensões, tratar dores e retenção de líquido com
@@ -110,9 +126,15 @@
           </p>
         </div>
         <div class="container__cards--card">
-          <img src="./assets/icon-tratamentos.png" />
-          <h1 class="container__cards--card-title">Tratamentos</h1>
-          <img src="./assets/soft-star.png" />
+          <img
+            src="./assets/icon-tratamentos.png"
+            alt="Ícone representando tratamento de pele, rosto feminino estilizado.."
+          />
+          <h3 class="container__cards--card-title">Tratamentos</h3>
+          <img
+            src="./assets/soft-star.png"
+            alt="Estrela decorativa, elemento visual de destaque."
+          />
           <p class="container__cards--card-texto">
             Sua pele gentilmente tratada com peelings, liftings, hidratações
             profundas do corpo e do rosto, além de limpeza facial e banhos
@@ -120,9 +142,15 @@
           </p>
         </div>
         <div class="container__cards--card">
-          <img src="./assets/icon-dias-especiais.png" />
-          <h1 class="container__cards--card-title">Day Spa</h1>
-          <img src="./assets/soft-star.png" />
+          <img
+            src="./assets/icon-dias-especiais.png"
+            alt="Ícone representando day spa, pessoa relaxando em um ambiente totalmente tranquilo."
+          />
+          <h3 class="container__cards--card-title">Day Spa</h3>
+          <img
+            src="./assets/soft-star.png"
+            alt="Estrela decorativa, elemento visual de destaque."
+          />
           <p class="container__cards--card-texto">
             Pacotes que vão desde o "Dia revitalizante" com massagens e
             tratamentos faciais, até o "Dia serenidade" com banhos terapêuticos
@@ -135,15 +163,17 @@
         <img
           class="container__incricao--mobile"
           src="./assets/mandala-superior-mobile.svg"
+          alt="Mandala decorativa superior para dispositivos moveis."
         />
         <img
           class="container__incricao--tablet"
           src="./assets/mandala-esquerda-tablet.svg"
+          alt="Mandala decorativa à esquerda para tablets."
         />
         <div class="container__incricao--div">
-          <h1 class="container__incricao--form-titulo">
+          <h3 class="container__incricao--form-titulo">
             Inscreva-se para ganhar descontos!
-          </h1>
+          </h3>
           <p class="container__incricao--form-texto">
             Cadastre-se em nossa newsletter para receber descontos e novidades
             sobre nossos serviços.
@@ -156,24 +186,35 @@
         <img
           class="container__incricao--mobile"
           src="./assets/mandala-inferior-mobile.svg"
+          alt="Mandala decorativa inferior para dispositivos móveis."
         />
         <img
           class="container__incricao--tablet"
           src="./assets/mandala-direita-tablet.svg"
+          alt="Mandala decorativa à direita para tablets."
         />
       </div>
 
       <div class="container__contato">
         <div class="container__contato--img">
-          <img src="./assets/contato-img-1.png" />
-          <img src="./assets/contato-img-2.png" />
-          <img src="./assets/contato-img-3.png" />
+          <img
+            src="./assets/contato-img-1.png"
+            alt="Ambiente de atendimento de spa, recepcionista sorrindo."
+          />
+          <img
+            src="./assets/contato-img-2.png"
+            alt="Sala de espera confortável com poltronas e plantas."
+          />
+          <img
+            src="./assets/contato-img-3.png"
+            alt="Profissional do spa realizando atendimento personalizado."
+          />
         </div>
         <div action="." class="container__contato--form">
           <div class="container__contato--form-conteudo">
-            <h1 class="container__contato--form-conteudo-titulo">
+            <h3 class="container__contato--form-conteudo-titulo">
               Entre em contato
-            </h1>
+            </h3>
             <p class="container__contato--form-conteudo-texto">
               Reserve seu horário, tire dúvidas ou proponha sugestões, nosso
               canal é aberto para você!
