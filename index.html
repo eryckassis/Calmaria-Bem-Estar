@@ -72,6 +72,7 @@
               tranquilidade.
             </p>
             <object
+            aria-hidden="true"
               tabindex="-1"
               data="./assets/separador-direita.svg"
               type="image/svg+xml"
@@ -88,6 +89,7 @@
               encontra seu paraíso particular.
             </p>
             <object
+            aria-hidden="true"
               tabindex="-1"
               data="./assets/separador-esquerda.svg"
               type="image/svg+xml"
@@ -212,7 +214,7 @@
         </div>
         <form action="." class="container__contato--form">
           <div class="container__contato--form-conteudo">
-            <h3 class="container__contato--form-conteudo-titulo">
+            <h3 id="contato"class="container__contato--form-conteudo-titulo">
               Entre em contato
             </h3>
             <p class="container__contato--form-conteudo-texto">
@@ -245,7 +247,7 @@
               name="telefone"
               required
             />
-            <fieldset>
+            <fieldset aria-labelledby="titulo-do-contato">
               <legend class="container__contato--inputs--titulo">
                 Prefere contato por:
               </legend>
